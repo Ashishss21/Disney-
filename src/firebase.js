@@ -10,9 +10,10 @@ const firebaseConfig = {
     measurementId: "G-EMHRFGTVHZ"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  const firebaseApp = firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
+// const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const auth = firebaseApp.firestore();
 const provider = new firebase.auth.GoogleAuthProvider();
